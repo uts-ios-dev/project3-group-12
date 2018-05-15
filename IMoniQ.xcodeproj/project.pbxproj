@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F514F0EE20AA53E4001C99C1 /* HealthKit.framework */; };
+		F514F0F820AA5415001C99C1 /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F120AA5414001C99C1 /* AgreementViewController.swift */; };
+		F514F0F920AA5415001C99C1 /* SleepMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F220AA5414001C99C1 /* SleepMonitorViewController.swift */; };
+		F514F0FA20AA5415001C99C1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F320AA5414001C99C1 /* WelcomeViewController.swift */; };
+		F514F0FB20AA5415001C99C1 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F420AA5414001C99C1 /* SignatureViewController.swift */; };
+		F514F0FC20AA5415001C99C1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F520AA5415001C99C1 /* MenuViewController.swift */; };
+		F514F0FD20AA5415001C99C1 /* ConcentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F620AA5415001C99C1 /* ConcentViewController.swift */; };
+		F514F0FE20AA5415001C99C1 /* DailyActivityMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F720AA5415001C99C1 /* DailyActivityMonitorViewController.swift */; };
+		F514F10D20AA594D001C99C1 /* HealthMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F10C20AA594D001C99C1 /* HealthMonitorViewController.swift */; };
+		F514F10F20AA5987001C99C1 /* HealthMonitorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F10E20AA5987001C99C1 /* HealthMonitorDetailViewController.swift */; };
+		F514F11120AA59B7001C99C1 /* WeightMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F11020AA59B7001C99C1 /* WeightMonitorViewController.swift */; };
+		F514F11320AA5A8D001C99C1 /* PrescriptionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F11220AA5A8D001C99C1 /* PrescriptionListTableViewController.swift */; };
 		F58FB50E20A7C91900757FBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58FB50D20A7C91900757FBC /* AppDelegate.swift */; };
 		F58FB51020A7C91900757FBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58FB50F20A7C91900757FBC /* ViewController.swift */; };
 		F58FB51320A7C91900757FBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58FB51120A7C91900757FBC /* Main.storyboard */; };
@@ -15,7 +27,37 @@
 		F58FB51B20A7C91A00757FBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58FB51920A7C91A00757FBC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F5CE642420AA630400C81421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5CE641E20AA630400C81421 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		F5CE642620AA630400C81421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5CE641E20AA630400C81421 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F514F0EC20AA53E4001C99C1 /* IMoniQ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IMoniQ.entitlements; sourceTree = "<group>"; };
+		F514F0EE20AA53E4001C99C1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F514F0F120AA5414001C99C1 /* AgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
+		F514F0F220AA5414001C99C1 /* SleepMonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepMonitorViewController.swift; sourceTree = "<group>"; };
+		F514F0F320AA5414001C99C1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F514F0F420AA5414001C99C1 /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		F514F0F520AA5415001C99C1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F514F0F620AA5415001C99C1 /* ConcentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentViewController.swift; sourceTree = "<group>"; };
+		F514F0F720AA5415001C99C1 /* DailyActivityMonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyActivityMonitorViewController.swift; sourceTree = "<group>"; };
+		F514F10C20AA594D001C99C1 /* HealthMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMonitorViewController.swift; sourceTree = "<group>"; };
+		F514F10E20AA5987001C99C1 /* HealthMonitorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMonitorDetailViewController.swift; sourceTree = "<group>"; };
+		F514F11020AA59B7001C99C1 /* WeightMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightMonitorViewController.swift; sourceTree = "<group>"; };
+		F514F11220AA5A8D001C99C1 /* PrescriptionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionListTableViewController.swift; sourceTree = "<group>"; };
 		F58FB50A20A7C91900757FBC /* IMoniQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMoniQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58FB50D20A7C91900757FBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F58FB50F20A7C91900757FBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +66,7 @@
 		F58FB51720A7C91A00757FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F58FB51A20A7C91A00757FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F58FB51C20A7C91A00757FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5CE641E20AA630400C81421 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../../../Downloads/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +74,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F514F0ED20AA53E4001C99C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F514F0EE20AA53E4001C99C1 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F514F0F020AA53FE001C99C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F514F0F120AA5414001C99C1 /* AgreementViewController.swift */,
+				F514F0F620AA5415001C99C1 /* ConcentViewController.swift */,
+				F514F0F720AA5415001C99C1 /* DailyActivityMonitorViewController.swift */,
+				F514F0F520AA5415001C99C1 /* MenuViewController.swift */,
+				F514F0F420AA5414001C99C1 /* SignatureViewController.swift */,
+				F514F0F220AA5414001C99C1 /* SleepMonitorViewController.swift */,
+				F514F0F320AA5414001C99C1 /* WelcomeViewController.swift */,
+				F514F10C20AA594D001C99C1 /* HealthMonitorViewController.swift */,
+				F514F10E20AA5987001C99C1 /* HealthMonitorDetailViewController.swift */,
+				F514F11020AA59B7001C99C1 /* WeightMonitorViewController.swift */,
+				F514F11220AA5A8D001C99C1 /* PrescriptionListTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F514F0FF20AA57C9001C99C1 /* Supporitng files */ = {
+			isa = PBXGroup;
+			children = (
+				F5CE641E20AA630400C81421 /* ResearchKit.xcodeproj */,
+				F58FB51720A7C91A00757FBC /* Assets.xcassets */,
+				F58FB50F20A7C91900757FBC /* ViewController.swift */,
+			);
+			path = "Supporitng files";
+			sourceTree = "<group>";
+		};
+		F514F10B20AA5855001C99C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F58FB51120A7C91900757FBC /* Main.storyboard */,
+				F58FB51920A7C91A00757FBC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F58FB50120A7C91900757FBC = {
 			isa = PBXGroup;
 			children = (
 				F58FB50C20A7C91900757FBC /* IMoniQ */,
 				F58FB50B20A7C91900757FBC /* Products */,
+				F514F0ED20AA53E4001C99C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +147,23 @@
 			isa = PBXGroup;
 			children = (
 				F58FB50D20A7C91900757FBC /* AppDelegate.swift */,
-				F58FB50F20A7C91900757FBC /* ViewController.swift */,
-				F58FB51120A7C91900757FBC /* Main.storyboard */,
-				F58FB51720A7C91A00757FBC /* Assets.xcassets */,
-				F58FB51920A7C91A00757FBC /* LaunchScreen.storyboard */,
-				F58FB51C20A7C91A00757FBC /* Info.plist */,
+				F514F10B20AA5855001C99C1 /* View */,
+				F514F0F020AA53FE001C99C1 /* Controllers */,
+				F514F0FF20AA57C9001C99C1 /* Supporitng files */,
+				F514F0EC20AA53E4001C99C1 /* IMoniQ.entitlements */,
 				F58FB51420A7C91900757FBC /* IMoniQ.xcdatamodeld */,
+				F58FB51C20A7C91A00757FBC /* Info.plist */,
 			);
 			path = IMoniQ;
+			sourceTree = "<group>";
+		};
+		F5CE641F20AA630400C81421 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5CE642520AA630400C81421 /* ResearchKit.framework */,
+				F5CE642720AA630400C81421 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +198,11 @@
 				TargetAttributes = {
 					F58FB50920A7C91900757FBC = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -113,12 +217,35 @@
 			mainGroup = F58FB50120A7C91900757FBC;
 			productRefGroup = F58FB50B20A7C91900757FBC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F5CE641F20AA630400C81421 /* Products */;
+					ProjectRef = F5CE641E20AA630400C81421 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F58FB50920A7C91900757FBC /* IMoniQ */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F5CE642520AA630400C81421 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = F5CE642420AA630400C81421 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5CE642720AA630400C81421 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = F5CE642620AA630400C81421 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F58FB50820A7C91900757FBC /* Resources */ = {
@@ -138,9 +265,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F514F0FE20AA5415001C99C1 /* DailyActivityMonitorViewController.swift in Sources */,
 				F58FB51020A7C91900757FBC /* ViewController.swift in Sources */,
+				F514F11120AA59B7001C99C1 /* WeightMonitorViewController.swift in Sources */,
+				F514F10F20AA5987001C99C1 /* HealthMonitorDetailViewController.swift in Sources */,
+				F514F0FD20AA5415001C99C1 /* ConcentViewController.swift in Sources */,
 				F58FB50E20A7C91900757FBC /* AppDelegate.swift in Sources */,
 				F58FB51620A7C91900757FBC /* IMoniQ.xcdatamodeld in Sources */,
+				F514F0FA20AA5415001C99C1 /* WelcomeViewController.swift in Sources */,
+				F514F0FB20AA5415001C99C1 /* SignatureViewController.swift in Sources */,
+				F514F10D20AA594D001C99C1 /* HealthMonitorViewController.swift in Sources */,
+				F514F0F920AA5415001C99C1 /* SleepMonitorViewController.swift in Sources */,
+				F514F11320AA5A8D001C99C1 /* PrescriptionListTableViewController.swift in Sources */,
+				F514F0F820AA5415001C99C1 /* AgreementViewController.swift in Sources */,
+				F514F0FC20AA5415001C99C1 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +422,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IMoniQ/IMoniQ.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LJN3N4R83V;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IMoniQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,8 +441,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IMoniQ/IMoniQ.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LJN3N4R83V;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IMoniQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
