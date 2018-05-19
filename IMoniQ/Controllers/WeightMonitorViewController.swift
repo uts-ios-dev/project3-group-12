@@ -16,7 +16,7 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var weightInputBox: UITextField!
     @IBOutlet weak var weightChart: LineChartView!
     
-    var weights : [Double] = [] //This is where we are going to store all the numbers. This can be a set of numbers that come from a Realm database, Core data, External API's or where ever else
+    var weights : [Double] = [] //weight datas are stored here
     
     
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
     
     // allows digit input only.
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let allowedCharaters = CharacterSet.decimalDigits //digits only
+        let allowedCharaters = CharacterSet.decimalDigits
         let characterSet = CharacterSet(charactersIn: string)
         return allowedCharaters.isSuperset(of: characterSet)
     }
@@ -35,16 +35,17 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
     
     /// This is the button trigger
     @IBAction func enterButtonPressed(_ sender: Any) {
-        let input  = Double(weightInputBox.text!) //gets input from the textbox - expects input as double/int
+        let input  = Double(weightInputBox.text!) //gets input from the weightInputBox
         
-        weights.append(input!) //here we add the data to the array.
+        weights.append(input!) // add weights input
         
         updateGraph()
-        weightInputBox.text = ""
+        weightInputBox.text = "" // after submitting reset the box
     }
     
     func updateGraph(){
-        var lineChartEntry  = [ChartDataEntry]() //this is the Array that will eventually be displayed on the graph.
+        //the array that used in line graph
+        var lineChartEntry  = [ChartDataEntry]()
         
         //here is the for loop
         for i in 0..<weights.count {
@@ -52,15 +53,14 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
             lineChartEntry.append(value)
         }
         
-        let line1 = LineChartDataSet(values: lineChartEntry, label: "Weight") //convert lineChartEntry to a LineChartDataSet
-        line1.colors = [NSUIColor.blue] //Sets the colour to blue
-        let data = LineChartData() //This is the object that will be added to the chart
+        //convert lineChartEntry to a LineChartDataSet
+        let line1 = LineChartDataSet(values: lineChartEntry, label: "Weight")
+        line1.colors = [NSUIColor.blue]
+        //the object that will be added to the chart
+        let data = LineChartData()
         data.addDataSet(line1) //Adds the line to the dataSet
         weightChart.data = data
         weightChart.chartDescription?.text = "Weight Monitor"
     }
-    
-    
-    
 }
 
