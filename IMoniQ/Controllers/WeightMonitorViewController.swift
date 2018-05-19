@@ -34,7 +34,16 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
 
     
     /// This is the button trigger
-    @IBAction func enterButtonPressed(_ sender: Any) {
+    @IBAction func enterButtonPressed(_ sender: UIButton!) {
+        
+        guard self.weightInputBox.text != nil && !(self.weightInputBox.text?.isEmpty)! else {
+            self.shake(self.weightInputBox)
+            self.perform(#selector(
+                shake(_:)), with: nil, afterDelay: 0.2)
+            self.prompt()
+            return
+        }
+
         let input  = Double(weightInputBox.text!) //gets input from the weightInputBox
         
         weights.append(input!) // add weights input
@@ -52,7 +61,7 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
             let value = ChartDataEntry(x: Double(i), y: weights[i]) //set the X and Y status in a data chart entry
             lineChartEntry.append(value)
         }
-        
+
         //convert lineChartEntry to a LineChartDataSet
         let line1 = LineChartDataSet(values: lineChartEntry, label: "Weight")
         line1.colors = [NSUIColor.blue]
@@ -61,6 +70,47 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
         data.addDataSet(line1) //Adds the line to the dataSet
         weightChart.data = data
         weightChart.chartDescription?.text = "Weight Monitor"
+    }
+    
+     //Shake a control to draw the user's attention to the focus of
+    @objc func shake(_ object: UIView) {
+        
+        UIView.animate(withDuration: 0.2, delay: 0, animations: {
+            
+            let rightTransform  = CGAffineTransform(translationX: 50, y: 0)
+            object.transform = rightTransform
+            
+        }) { (_) in
+            
+            UIView.animate(withDuration: 0.2, animations: {
+                object.transform = CGAffineTransform.identity
+            })
+        }        
+    }
+
+     // Pop-up prompt window
+    func prompt() {
+        let sheet = UIAlertController.init(title: "Prompt Message", message: "Please enter your weight(number)", preferredStyle: UIAlertControllerStyle.actionSheet)
+        sheet.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: { (action: UIAlertAction) in
+            
+        }))
+        self.present(sheet, animated: true, completion: nil)
+    }
+    
+
+    // Pop-up prompt window with animation
+
+    func promptWithAnimation() {
+        
+        let alert = UIView.init(frame: CGRect(x: 15, y: 180, width: self.view.frame.width-30, height: self.view.frame.height/4*3))
+        let keyWindow = UIApplication.shared.keyWindow
+        keyWindow?.addSubview(alert)
+        alert.transform = CGAffineTransform(scaleX: 1.21, y: 1.21)
+        alert.alpha = 0
+        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: UIViewAnimationOptions.curveEaseInOut, animations: {
+            alert.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            alert.alpha = 1.0
+        }, completion: nil)
     }
 }
 
