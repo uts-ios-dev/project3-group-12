@@ -449,17 +449,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZ7-f9-QtR">
-                                <rect key="frame" x="164" y="473" width="46" height="30"/>
+                                <rect key="frame" x="170" y="473" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startSleep:" destination="9RA-EC-toK" eventType="touchDown" id="o2Q-3F-0UU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35d-13-U93">
-                                <rect key="frame" x="164" y="540" width="46" height="30"/>
+                                <rect key="frame" x="171" y="540" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Stop"/>
                                 <connections>
                                     <action selector="stopSleep:" destination="9RA-EC-toK" eventType="touchDown" id="v4b-Sj-zmO"/>
                                 </connections>
