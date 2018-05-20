@@ -7,7 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E93BF1E20B1643200A33ED9 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF1D20B1643200A33ED9 /* Charts.framework */; };
+		3E93BF2020B1643200A33ED9 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF1F20B1643200A33ED9 /* FirebaseAuth.framework */; };
+		3E93BF2220B1643200A33ED9 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2120B1643200A33ED9 /* FirebaseCore.framework */; };
+		3E93BF2420B1643200A33ED9 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2320B1643200A33ED9 /* FirebaseDatabase.framework */; };
+		3E93BF2620B1643200A33ED9 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2520B1643200A33ED9 /* GoogleToolboxForMac.framework */; };
+		3E93BF2820B1643200A33ED9 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2720B1643200A33ED9 /* GTMSessionFetcher.framework */; };
+		3E93BF2A20B1643200A33ED9 /* leveldb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2920B1643200A33ED9 /* leveldb.framework */; };
+		3E93BF2C20B1643200A33ED9 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2B20B1643200A33ED9 /* nanopb.framework */; };
+		3E93BF2E20B1643200A33ED9 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2D20B1643200A33ED9 /* ResearchKit.framework */; };
+		3E93BF3020B1643200A33ED9 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2F20B1643200A33ED9 /* TesseractOCR.framework */; };
+		3E93BF3220B1653A00A33ED9 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 3E93BF3120B1653900A33ED9 /* Classes */; };
+		3E93BF3420B16CFD00A33ED9 /* userPainv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E93BF3320B16CFD00A33ED9 /* userPainv2.swift */; };
 		3E9AB58D20AEFF4C008F766E /* img in Resources */ = {isa = PBXBuildFile; fileRef = 3E9AB58C20AEFF4C008F766E /* img */; };
+		6B8758EF085DE3E1EC7BAA2F /* Pods_IMoniQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7CDCDE9ED537F98A25EFCD /* Pods_IMoniQ.framework */; };
 		F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F514F0EE20AA53E4001C99C1 /* HealthKit.framework */; };
 		F514F0F820AA5415001C99C1 /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F120AA5414001C99C1 /* AgreementViewController.swift */; };
 		F514F0F920AA5415001C99C1 /* SleepMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F220AA5414001C99C1 /* SleepMonitorViewController.swift */; };
@@ -46,7 +59,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12AAABCB15E143223ABB2AF0 /* Pods-IMoniQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMoniQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMoniQ/Pods-IMoniQ.release.xcconfig"; sourceTree = "<group>"; };
+		3E93BF1D20B1643200A33ED9 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E93BF1F20B1643200A33ED9 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E93BF2120B1643200A33ED9 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E93BF2320B1643200A33ED9 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E93BF2520B1643200A33ED9 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E93BF2720B1643200A33ED9 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E93BF2920B1643200A33ED9 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E93BF2B20B1643200A33ED9 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E93BF2D20B1643200A33ED9 /* ResearchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ResearchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E93BF2F20B1643200A33ED9 /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E93BF3120B1653900A33ED9 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = SOURCE_ROOT; };
+		3E93BF3320B16CFD00A33ED9 /* userPainv2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPainv2.swift; sourceTree = "<group>"; };
 		3E9AB58C20AEFF4C008F766E /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = SOURCE_ROOT; };
+		5A7CDCDE9ED537F98A25EFCD /* Pods_IMoniQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMoniQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3CDA2D827D184E52B2B5C61 /* Pods-IMoniQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMoniQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMoniQ/Pods-IMoniQ.debug.xcconfig"; sourceTree = "<group>"; };
 		F514F0EC20AA53E4001C99C1 /* IMoniQ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IMoniQ.entitlements; sourceTree = "<group>"; };
 		F514F0EE20AA53E4001C99C1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		F514F0F120AA5414001C99C1 /* AgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
@@ -76,17 +104,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E93BF1E20B1643200A33ED9 /* Charts.framework in Frameworks */,
+				3E93BF2020B1643200A33ED9 /* FirebaseAuth.framework in Frameworks */,
+				3E93BF2220B1643200A33ED9 /* FirebaseCore.framework in Frameworks */,
+				3E93BF2420B1643200A33ED9 /* FirebaseDatabase.framework in Frameworks */,
+				3E93BF2620B1643200A33ED9 /* GoogleToolboxForMac.framework in Frameworks */,
+				3E93BF2820B1643200A33ED9 /* GTMSessionFetcher.framework in Frameworks */,
+				3E93BF2A20B1643200A33ED9 /* leveldb.framework in Frameworks */,
+				3E93BF2C20B1643200A33ED9 /* nanopb.framework in Frameworks */,
+				3E93BF2E20B1643200A33ED9 /* ResearchKit.framework in Frameworks */,
+				3E93BF3020B1643200A33ED9 /* TesseractOCR.framework in Frameworks */,
 				F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */,
+				6B8758EF085DE3E1EC7BAA2F /* Pods_IMoniQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33D285A559D6498663EDE161 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3CDA2D827D184E52B2B5C61 /* Pods-IMoniQ.debug.xcconfig */,
+				12AAABCB15E143223ABB2AF0 /* Pods-IMoniQ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F514F0ED20AA53E4001C99C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E93BF1D20B1643200A33ED9 /* Charts.framework */,
+				3E93BF1F20B1643200A33ED9 /* FirebaseAuth.framework */,
+				3E93BF2120B1643200A33ED9 /* FirebaseCore.framework */,
+				3E93BF2320B1643200A33ED9 /* FirebaseDatabase.framework */,
+				3E93BF2520B1643200A33ED9 /* GoogleToolboxForMac.framework */,
+				3E93BF2720B1643200A33ED9 /* GTMSessionFetcher.framework */,
+				3E93BF2920B1643200A33ED9 /* leveldb.framework */,
+				3E93BF2B20B1643200A33ED9 /* nanopb.framework */,
+				3E93BF2D20B1643200A33ED9 /* ResearchKit.framework */,
+				3E93BF2F20B1643200A33ED9 /* TesseractOCR.framework */,
 				F514F0EE20AA53E4001C99C1 /* HealthKit.framework */,
+				5A7CDCDE9ED537F98A25EFCD /* Pods_IMoniQ.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,6 +162,7 @@
 				F514F0F320AA5414001C99C1 /* WelcomeViewController.swift */,
 				F514F10C20AA594D001C99C1 /* HealthMonitorViewController.swift */,
 				F514F10E20AA5987001C99C1 /* HealthMonitorDetailViewController.swift */,
+				3E93BF3320B16CFD00A33ED9 /* userPainv2.swift */,
 				F514F11020AA59B7001C99C1 /* WeightMonitorViewController.swift */,
 				F514F11220AA5A8D001C99C1 /* PrescriptionListTableViewController.swift */,
 			);
@@ -134,6 +194,7 @@
 				F58FB50C20A7C91900757FBC /* IMoniQ */,
 				F58FB50B20A7C91900757FBC /* Products */,
 				F514F0ED20AA53E4001C99C1 /* Frameworks */,
+				33D285A559D6498663EDE161 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +216,7 @@
 				F514F0EC20AA53E4001C99C1 /* IMoniQ.entitlements */,
 				F58FB51420A7C91900757FBC /* IMoniQ.xcdatamodeld */,
 				F58FB51C20A7C91A00757FBC /* Info.plist */,
+				3E93BF3120B1653900A33ED9 /* Classes */,
 				3E9AB58C20AEFF4C008F766E /* img */,
 			);
 			path = IMoniQ;
@@ -176,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F58FB51F20A7C91A00757FBC /* Build configuration list for PBXNativeTarget "IMoniQ" */;
 			buildPhases = (
+				A633924DC607D1304035B76B /* [CP] Check Pods Manifest.lock */,
 				F58FB50620A7C91900757FBC /* Sources */,
 				F58FB50720A7C91900757FBC /* Frameworks */,
 				F58FB50820A7C91900757FBC /* Resources */,
+				EE5A08B7286AB5A468A3B730 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,12 +322,64 @@
 			files = (
 				3E9AB58D20AEFF4C008F766E /* img in Resources */,
 				F58FB51B20A7C91A00757FBC /* LaunchScreen.storyboard in Resources */,
+				3E93BF3220B1653A00A33ED9 /* Classes in Resources */,
 				F58FB51820A7C91A00757FBC /* Assets.xcassets in Resources */,
 				F58FB51320A7C91900757FBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A633924DC607D1304035B76B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMoniQ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5A08B7286AB5A468A3B730 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IMoniQ/Pods-IMoniQ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ResearchKit/ResearchKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ResearchKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMoniQ/Pods-IMoniQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F58FB50620A7C91900757FBC /* Sources */ = {
@@ -283,6 +399,7 @@
 				F514F0F920AA5415001C99C1 /* SleepMonitorViewController.swift in Sources */,
 				F514F11320AA5A8D001C99C1 /* PrescriptionListTableViewController.swift in Sources */,
 				F514F0F820AA5415001C99C1 /* AgreementViewController.swift in Sources */,
+				3E93BF3420B16CFD00A33ED9 /* userPainv2.swift in Sources */,
 				F514F0FC20AA5415001C99C1 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +541,7 @@
 		};
 		F58FB52020A7C91A00757FBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3CDA2D827D184E52B2B5C61 /* Pods-IMoniQ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = IMoniQ/IMoniQ.entitlements;
@@ -441,6 +559,7 @@
 		};
 		F58FB52120A7C91A00757FBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12AAABCB15E143223ABB2AF0 /* Pods-IMoniQ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = IMoniQ/IMoniQ.entitlements;

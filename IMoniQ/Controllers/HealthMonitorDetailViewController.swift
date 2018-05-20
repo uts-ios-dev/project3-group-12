@@ -10,7 +10,7 @@ import UIKit
 import Charts
 
 class HealthMonitorDetailViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         barChartView.leftAxis.drawGridLinesEnabled = false
