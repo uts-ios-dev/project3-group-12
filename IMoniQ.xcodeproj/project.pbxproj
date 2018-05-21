@@ -11,6 +11,7 @@
 		3E93BF3220B1653A00A33ED9 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 3E93BF3120B1653900A33ED9 /* Classes */; };
 		3E93BF3420B16CFD00A33ED9 /* userPainv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E93BF3320B16CFD00A33ED9 /* userPainv2.swift */; };
 		3E9AB58D20AEFF4C008F766E /* img in Resources */ = {isa = PBXBuildFile; fileRef = 3E9AB58C20AEFF4C008F766E /* img */; };
+		611A059ED03943E4D4F9D3C2 /* Pods_IMoniQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7CDCDE9ED537F98A25EFCD /* Pods_IMoniQ.framework */; };
 		F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F514F0EE20AA53E4001C99C1 /* HealthKit.framework */; };
 		F514F0F820AA5415001C99C1 /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F120AA5414001C99C1 /* AgreementViewController.swift */; };
 		F514F0F920AA5415001C99C1 /* SleepMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F220AA5414001C99C1 /* SleepMonitorViewController.swift */; };
@@ -96,6 +97,7 @@
 			files = (
 				3E93BF1E20B1643200A33ED9 /* Charts.framework in Frameworks */,
 				F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */,
+				611A059ED03943E4D4F9D3C2 /* Pods_IMoniQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
