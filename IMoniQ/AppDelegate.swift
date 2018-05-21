@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-//import ResearchKit
+import ResearchKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

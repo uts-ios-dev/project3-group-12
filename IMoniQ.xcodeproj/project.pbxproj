@@ -8,9 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3E93BF1E20B1643200A33ED9 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF1D20B1643200A33ED9 /* Charts.framework */; };
+		3E93BF2020B1643200A33ED9 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF1F20B1643200A33ED9 /* FirebaseAuth.framework */; };
+		3E93BF2220B1643200A33ED9 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2120B1643200A33ED9 /* FirebaseCore.framework */; };
+		3E93BF2420B1643200A33ED9 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2320B1643200A33ED9 /* FirebaseDatabase.framework */; };
+		3E93BF2620B1643200A33ED9 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2520B1643200A33ED9 /* GoogleToolboxForMac.framework */; };
+		3E93BF2820B1643200A33ED9 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2720B1643200A33ED9 /* GTMSessionFetcher.framework */; };
+		3E93BF2A20B1643200A33ED9 /* leveldb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2920B1643200A33ED9 /* leveldb.framework */; };
+		3E93BF2C20B1643200A33ED9 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2B20B1643200A33ED9 /* nanopb.framework */; };
+		3E93BF2E20B1643200A33ED9 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2D20B1643200A33ED9 /* ResearchKit.framework */; };
+		3E93BF3020B1643200A33ED9 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93BF2F20B1643200A33ED9 /* TesseractOCR.framework */; };
 		3E93BF3220B1653A00A33ED9 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 3E93BF3120B1653900A33ED9 /* Classes */; };
 		3E93BF3420B16CFD00A33ED9 /* userPainv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E93BF3320B16CFD00A33ED9 /* userPainv2.swift */; };
 		3E9AB58D20AEFF4C008F766E /* img in Resources */ = {isa = PBXBuildFile; fileRef = 3E9AB58C20AEFF4C008F766E /* img */; };
+		6B8758EF085DE3E1EC7BAA2F /* Pods_IMoniQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7CDCDE9ED537F98A25EFCD /* Pods_IMoniQ.framework */; };
 		F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F514F0EE20AA53E4001C99C1 /* HealthKit.framework */; };
 		F514F0F820AA5415001C99C1 /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F120AA5414001C99C1 /* AgreementViewController.swift */; };
 		F514F0F920AA5415001C99C1 /* SleepMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F220AA5414001C99C1 /* SleepMonitorViewController.swift */; };
@@ -95,7 +105,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E93BF1E20B1643200A33ED9 /* Charts.framework in Frameworks */,
+				3E93BF2020B1643200A33ED9 /* FirebaseAuth.framework in Frameworks */,
+				3E93BF2220B1643200A33ED9 /* FirebaseCore.framework in Frameworks */,
+				3E93BF2420B1643200A33ED9 /* FirebaseDatabase.framework in Frameworks */,
+				3E93BF2620B1643200A33ED9 /* GoogleToolboxForMac.framework in Frameworks */,
+				3E93BF2820B1643200A33ED9 /* GTMSessionFetcher.framework in Frameworks */,
+				3E93BF2A20B1643200A33ED9 /* leveldb.framework in Frameworks */,
+				3E93BF2C20B1643200A33ED9 /* nanopb.framework in Frameworks */,
+				3E93BF2E20B1643200A33ED9 /* ResearchKit.framework in Frameworks */,
+				3E93BF3020B1643200A33ED9 /* TesseractOCR.framework in Frameworks */,
 				F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */,
+				6B8758EF085DE3E1EC7BAA2F /* Pods_IMoniQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,10 +357,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IMoniQ/Pods-IMoniQ-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ResearchKit/ResearchKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ResearchKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
