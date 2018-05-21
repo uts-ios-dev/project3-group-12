@@ -10,48 +10,17 @@ import UIKit
 import Charts
 
 class HealthMonitorDetailViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        barChartView.leftAxis.drawGridLinesEnabled = false
-        barChartView.rightAxis.drawGridLinesEnabled = false
-        barChartView.xAxis.drawGridLinesEnabled = false
-        barChartView.xAxis.labelPosition = XAxis.LabelPosition.bottom
-        //barChartView.getAxis
+        setInitChart()
         
-        barChartView.noDataText = "WOWOWOOWOW WHO IS WORKING HERE"
+        setDate()
         
-        var i = userPainHistory.count - 5
-        while i < userPainHistory.count {
-            let calendar = Calendar.current
-            let day = calendar.component(.day, from: userPainHistory[i].date)
-            let hour = calendar.component(.hour, from: userPainHistory[i].date)
-            let minute = calendar.component(.minute, from: userPainHistory[i].date)
-            let month = calendar.component(.month, from: userPainHistory[i].date)
-            
-            let str = "\(day)/\(month) \(hour):\(minute)"
-            dates.append(str)
-            i += 1
-        }
-        
-        var k = userPainHistory.count - 5
-        while k < userPainHistory.count {
-            painLvl.append(Double(userPainHistory[k].painLevel))
-            k += 1
-        }
+        setPain()
         
         setChart(dataPoints: dates, values: painLvl)
         
-        painLevelOutlet.text = String(userPainHistory.last!.painLevel)
-        let calendar = Calendar.current
-        let day = calendar.component(.day, from: userPainHistory.last!.date)
-        let hour = calendar.component(.hour, from: userPainHistory.last!.date)
-        let minute = calendar.component(.minute, from: userPainHistory.last!.date)
-        minuteOutlet.text = String(minute)
-        hourOutlet.text = String(hour)
-        dayOutlet.text = String(day)
-        
-
         // Do any additional setup after loading the view.
     }
 
@@ -59,9 +28,48 @@ class HealthMonitorDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func setPain() {
+        var k = userPainHistory.count - 5
+        while k < userPainHistory.count {
+            if k > -1 {
+                painLvl.append(Double(userPainHistory[k].painLevel))
+            }
+            k += 1
+        }
+    }
     
-    var dates: Array<String> = Array()
-    var painLvl: Array<Double> = Array()
+    func setDate() {
+        var i = userPainHistory.count - 5
+        
+        while i < userPainHistory.count {
+            if i > -1 {
+                let calendar = Calendar.current
+                let day = calendar.component(.day, from: userPainHistory[i].date)
+                let hour = calendar.component(.hour, from: userPainHistory[i].date)
+                let minute = calendar.component(.minute, from: userPainHistory[i].date)
+                let month = calendar.component(.month, from: userPainHistory[i].date)
+            
+                let str = "\(day)/\(month) \(hour):\(minute)"
+                dates.append(str)
+            }
+            i += 1
+        }
+    }
+    
+    func setInitChart() {
+        barChartView.noDataText = "No data is available"
+        //barChartView.leftAxis.drawGridLinesEnabled = false
+        barChartView.rightAxis.drawGridLinesEnabled = false
+        barChartView.xAxis.drawGridLinesEnabled = false
+        barChartView.xAxis.labelPosition = XAxis.LabelPosition.bottom
+        barChartView.chartDescription?.enabled = false
+        barChartView.legend.enabled = true
+        barChartView.rightAxis.enabled = false
+        barChartView.leftAxis.drawLabelsEnabled = true
+        barChartView.leftAxis.axisMaximum = 6.5
+        barChartView.leftAxis.axisMinimum = 1.0
+        barChartView.leftAxis.labelCount = 5
+    }
     
     func setChart(dataPoints: Array<String>, values: Array<Double>) {
         var dataEntries: [BarChartDataEntry] = []
@@ -76,14 +84,12 @@ class HealthMonitorDetailViewController: UIViewController {
     }
     
     
+    var dates: Array<String> = Array()
+    var painLvl: Array<Double> = Array()
     
     @IBOutlet weak var barChartView: BarChartView!
     
-    
-    @IBOutlet weak var painLevelOutlet: UILabel!
-    @IBOutlet weak var minuteOutlet: UILabel!
-    @IBOutlet weak var hourOutlet: UILabel!
-    @IBOutlet weak var dayOutlet: UILabel!
+
     /*
     // MARK: - Navigation
 
