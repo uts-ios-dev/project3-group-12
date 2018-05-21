@@ -27,7 +27,6 @@ class HealthMonitorViewController: UIViewController {
     }
     
     @IBAction func verticalSliderChanged(_ sender: UISlider) {
-        sliderValueOutlet.text = String(sender.value)
         if(sender.value > 5.5) {
             superSad.transform = CGAffineTransform(scaleX: CGFloat(1.5 - abs(6.0 - sender.value)), y: CGFloat(1.5 - abs(6.0 - sender.value)))
         }
@@ -51,7 +50,12 @@ class HealthMonitorViewController: UIViewController {
 
     }
     
-    @IBOutlet weak var sliderValueOutlet: UILabel!
+    @IBAction func saveButtonPressed(_ sender: UIButton) {
+        let user = userPain()
+        user.updateUserPainHistory(currentPain: verticalSlider.value)
+    }
+    
+    
     @IBOutlet weak var superHappy: UIImageView!
     @IBOutlet weak var superSad: UIImageView!
     @IBOutlet weak var happy: UIImageView!
